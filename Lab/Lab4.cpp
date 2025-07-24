@@ -14,4 +14,4 @@ int main() {
     printf("Expected Output:\n");
     printf("Employees ID: %s\n", ID);
     printf("Salary = U$ %.2f\n", (float)hrs * salary);
-}
+}//end main function
