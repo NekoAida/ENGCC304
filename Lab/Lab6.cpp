@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int N = 0a;
+    int N = 0;
     printf("Enter Value: ");
     scanf("%d", &N);
     if (N <= 0) {
