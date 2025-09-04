@@ -4,6 +4,9 @@ int  main(){
     int n;
     printf("Enter number : ");
     scanf("%d", &n);
+    if (n < 2) {
+        return 0;
+    }
     int i = n;
     do {
         int prime = 1; //กำหนดให้เป็นจำนวนเฉพาะ
@@ -14,13 +17,11 @@ int  main(){
             }//end if
             j++;
         } while (j < i);
-        if (i == 2) {
-            prime = 1;
+        if (prime == 1) {
+            printf("%d ", i);
         }//end if
         i--;
-        if (prime == 1) {
-            printf("%d ", i + 1);
-        }//end if
     } while (i >= 2);
+    printf("2");
     return 0;
 }//end main

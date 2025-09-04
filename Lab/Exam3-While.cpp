@@ -6,7 +6,7 @@ int main(){
     scanf("%d", &n);
     int i = n;
     while (i >= 2) {
-        int prime = 1; //กำหนดให้เป็นจำนวนเฉพาะ
+        int prime = 1; //สมมุติเลขเป็นจำนวนเฉพาะ
         int j = 2;
         while (j < i) {
             if (i % j == 0) {
@@ -14,10 +14,10 @@ int main(){
             }//end if
             j++;
         }//end while
-        i--;
         if (prime == 1) {
-            printf("%d ", i + 1);
+            printf("%d ", i);
         }//end if
+        i--;
     }//end while
     return 0;
 }//end main
