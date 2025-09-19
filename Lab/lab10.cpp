@@ -8,11 +8,21 @@ int main() {
 
     int i = 0;
     int j = strlen(str) - 1;
+    int prime = 1;
 
-    for(i = 0; i < j; i++) {
-        if(i != j) {
-            printf("Not Pass");
+    while(i < j) {
+        if(str[i] != str[j]) {
+            prime = 0;
+            break;
         }
+        i++;
+        j--;
+    }
+
+    if (prime) {
+        printf("\nPass");
+    }else {
+        printf("\nNot Pass");
     }
     return 0;
 }

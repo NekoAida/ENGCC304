@@ -15,6 +15,17 @@ int main() {
     }
     printf("\nArray : ");
     for(int i = 0; i < num; i++) {
+        int prime = 1;
+        for(int j = 2; j < N[i]; j++) {
+            if(N[i] % j == 0) {
+                prime = 0;
+            }
+        }
+        if (prime == 1) {
         printf("%5d", N[i]);
+        } else {
+            printf("%5c", '#');
+        }
     }
+    return 0;
 }
